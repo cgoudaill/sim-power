@@ -15,7 +15,7 @@ const TEAM_MEMBERS = [
       "Passionne de sport automobile, Stephane a fonde The Sim Power pour rendre la simulation haut de gamme accessible a tous. Sa vision : allier technologie de pointe et convivialite.",
   },
   {
-    name: "A venir",
+    name: "Nathan Lewahert",
     role: "Coach Pilotage",
     description:
       "Pilote experimente, il accompagne nos visiteurs dans leur progression et leur fait decouvrir les subtilites du pilotage sur circuit.",
