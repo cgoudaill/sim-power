@@ -131,9 +131,9 @@ export default function AProposPage() {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TEAM_MEMBERS.map((member) => (
+            {TEAM_MEMBERS.map((member, index) => (
               <div
-                key={member.name}
+                key={`${member.role}-${index}`}
                 className="group relative bg-surface rounded-2xl border border-white/5 hover:border-accent/30 overflow-hidden transition-all duration-300"
               >
                 {/* Avatar */}
