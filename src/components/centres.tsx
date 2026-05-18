@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const CENTRES = [
@@ -6,21 +7,24 @@ const CENTRES = [
     description:
       "Du simulateur EVO au GT PRO, notre centre de Braine-l'Alleud vous accueille dans un cadre haut de gamme pour vivre la simulation comme jamais.",
     badge: "Flagship",
-    gradient: "from-accent/80 to-accent-dark/80",
+    src: "/images/centres/braine.avif",
+    alt: "Centre The Sim Power Braine-l'Alleud",
   },
   {
     name: "TSP - Mons",
     description:
       "Une ambiance conviviale et familiale, ideale pour partager des sensations fortes entre amis ou en famille. Espace bar et convivialite garantie.",
     badge: "Convivial",
-    gradient: "from-accent-dark/80 to-amber-900/80",
+    src: "/images/centres/mons.jpg",
+    alt: "Centre The Sim Power Mons",
   },
   {
     name: "TSP - Terminal 1",
     description:
       "Technologie, emotion et convivialite. Repoussez vos limites au volant de nos simulateurs derniere generation dans un univers unique.",
     badge: "Nouveau",
-    gradient: "from-amber-900/80 to-orange-950/80",
+    src: "/images/centres/terminal1.webp",
+    alt: "Centre The Sim Power Terminal 1",
   },
 ] as const;
 
@@ -46,26 +50,35 @@ export function Centres() {
               key={centre.name}
               className="group relative overflow-hidden rounded-2xl border border-white/5 hover:border-accent/30 transition-all duration-500"
             >
-              {/* Gradient background */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${centre.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-              />
+              {/* Image */}
+              <div className="aspect-[4/3] relative overflow-hidden">
+                <Image
+                  src={centre.src}
+                  alt={centre.alt}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                {/* Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-              <div className="relative p-8 bg-surface group-hover:bg-transparent transition-colors duration-500">
                 {/* Badge */}
-                <span className="inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent/10 text-accent rounded-full mb-4 group-hover:bg-white/20 group-hover:text-white transition-colors duration-500">
+                <span className="absolute top-4 left-4 inline-block px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent/90 text-white rounded-full">
                   {centre.badge}
                 </span>
+              </div>
 
-                <h3 className="text-xl font-bold mb-3 group-hover:text-white transition-colors">
+              {/* Content */}
+              <div className="p-6 bg-surface">
+                <h3 className="text-xl font-bold mb-2">
                   {centre.name}
                 </h3>
 
-                <p className="text-sm text-muted group-hover:text-white/80 leading-relaxed transition-colors duration-500">
+                <p className="text-sm text-muted leading-relaxed">
                   {centre.description}
                 </p>
 
-                <div className="mt-6 flex items-center gap-2 text-accent group-hover:text-white text-sm font-semibold transition-colors duration-500">
+                <div className="mt-4 flex items-center gap-2 text-accent text-sm font-semibold group-hover:gap-3 transition-all duration-300">
                   <span>Decouvrir</span>
                   <svg
                     className="w-4 h-4 transition-transform group-hover:translate-x-1"
