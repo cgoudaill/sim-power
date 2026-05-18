@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -18,6 +19,8 @@ const CENTRES = [
       "Parking facile",
     ],
     badge: "Flagship",
+    src: "/images/centres/braine.avif",
+    alt: "Centre The Sim Power Braine-l'Alleud",
   },
   {
     name: "TSP - Mons",
@@ -30,6 +33,8 @@ const CENTRES = [
       "Evenements sportifs en direct",
     ],
     badge: "Convivial",
+    src: "/images/centres/mons.jpg",
+    alt: "Centre The Sim Power Mons",
   },
   {
     name: "TSP - Terminal 1",
@@ -42,6 +47,8 @@ const CENTRES = [
       "Defis & competitions",
     ],
     badge: "Nouveau",
+    src: "/images/centres/terminal1.webp",
+    alt: "Centre The Sim Power Terminal 1",
   },
 ] as const;
 
@@ -72,17 +79,20 @@ export default function CentresPage() {
                   index % 2 !== 0 ? "lg:flex-row-reverse" : ""
                 }`}
               >
-                {/* Visual placeholder */}
+                {/* Centre image */}
                 <div className="w-full lg:w-1/2">
-                  <div className="aspect-video bg-gradient-to-br from-accent/20 to-accent/5 rounded-2xl border border-accent/10 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-3">
-                        <svg className="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                        </svg>
-                      </div>
-                      <p className="text-sm text-accent font-semibold">{centre.name}</p>
-                    </div>
+                  <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/5 group/img">
+                    <Image
+                      src={centre.src}
+                      alt={centre.alt}
+                      fill
+                      className="object-cover transition-transform duration-700 group/img-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                    <span className="absolute top-4 left-4 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent/90 text-white rounded-full">
+                      {centre.badge}
+                    </span>
                   </div>
                 </div>
 
