@@ -6,7 +6,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
+      className="relative min-h-[75vh] flex items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/images/hero-bg.avif')" }}
     >
       {/* Dark overlay + gradient fade to background at bottom */}
