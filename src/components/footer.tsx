@@ -1,11 +1,12 @@
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
-const FOOTER_LINKS = [
-  { href: "/", label: "Accueil" },
-  { href: "/services", label: "Services" },
-  { href: "/centres", label: "Centres" },
-  { href: "/tarifs", label: "Tarifs" },
-  { href: "/contact", label: "Contact" },
+const NAV_KEYS = [
+  { href: "/", key: "home" },
+  { href: "/services", key: "services" },
+  { href: "/centres", key: "centres" },
+  { href: "/tarifs", key: "pricing" },
+  { href: "/contact", key: "contact" },
 ] as const;
 
 const SOCIAL_LINKS = [
@@ -39,6 +40,9 @@ const SOCIAL_LINKS = [
 ] as const;
 
 export function Footer() {
+  const t = useTranslations("Footer");
+  const tNav = useTranslations("Header");
+
   return (
     <footer className="bg-surface border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -53,24 +57,23 @@ export function Footer() {
               </span>
             </Link>
             <p className="mt-4 text-sm text-muted leading-relaxed">
-              L&apos;excellence de la simulation automobile. Coaching sur
-              mesure, immersion totale et e-racing elite.
+              {t("brandDescription")}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-accent font-semibold text-sm uppercase tracking-wider mb-4">
-              Navigation
+              {t("navigation")}
             </h3>
             <ul className="space-y-2">
-              {FOOTER_LINKS.map((link) => (
+              {NAV_KEYS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-muted hover:text-accent transition-colors duration-200"
                   >
-                    {link.label}
+                    {tNav(link.key)}
                   </Link>
                 </li>
               ))}
@@ -80,7 +83,7 @@ export function Footer() {
           {/* Contact & Social */}
           <div>
             <h3 className="text-accent font-semibold text-sm uppercase tracking-wider mb-4">
-              Contact
+              {t("contact")}
             </h3>
             <ul className="space-y-2 text-sm text-muted">
               <li className="flex items-start gap-2">
@@ -170,18 +173,17 @@ export function Footer() {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-muted">
-            &copy; {new Date().getFullYear()} The Sim Power. Tous droits
-            reserves.
+            &copy; {new Date().getFullYear()} {t("copyright")}
           </p>
           <div className="flex items-center gap-6 text-xs text-muted">
             <Link href="#" className="hover:text-accent transition-colors">
-              Mentions legales
+              {t("legalNotice")}
             </Link>
             <Link href="#" className="hover:text-accent transition-colors">
-              Politique de confidentialite
+              {t("privacyPolicy")}
             </Link>
             <Link href="#" className="hover:text-accent transition-colors">
-              FAQ
+              {t("faq")}
             </Link>
           </div>
         </div>

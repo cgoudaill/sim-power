@@ -1,10 +1,25 @@
+import { setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import { Hero } from "@/components/hero";
 import { Features } from "@/components/features";
 import { Simulateurs } from "@/components/simulateurs";
 import { Centres } from "@/components/centres";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
-export default function HomePage() {
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  return <HomeContent />;
+}
+
+function HomeContent() {
+  const t = useTranslations("HomeCtaBanner");
+
   return (
     <>
       <Hero />
@@ -16,17 +31,18 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-accent/10 via-accent/5 to-accent/10" />
         <div className="relative max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight mb-4">
-            Pret a prendre le <span className="text-accent">volant</span> ?
+            {t("title")}{" "}
+            <span className="text-accent">{t("titleAccent")}</span>{" "}
+            {t("titleEnd")}
           </h2>
           <p className="text-muted mb-8 max-w-xl mx-auto">
-            Reservez votre session des maintenant et plongez dans l&apos;univers
-            du sim racing professionnel.
+            {t("description")}
           </p>
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 bg-accent hover:bg-accent-light text-white font-bold text-sm uppercase tracking-wider rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-accent/30 hover:scale-105"
           >
-            Reservez votre session
+            {t("cta")}
             <svg
               className="w-4 h-4"
               fill="none"

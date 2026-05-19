@@ -1,0 +1,319 @@
+{
+  "Metadata": {
+    "defaultTitle": "The Sim Power | The excellence of racing simulation",
+    "titleTemplate": "%s | The Sim Power",
+    "defaultDescription": "Tailored coaching, total immersion and elite e-racing. Drive the car of your dreams on our high-end simulators."
+  },
+  "Header": {
+    "home": "Home",
+    "services": "Services",
+    "centres": "Centres",
+    "about": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "cta": "Book now"
+  },
+  "Hero": {
+    "badge": "High-end racing simulation",
+    "titleLine1": "The excellence of",
+    "titleLine2": "simulation.",
+    "subtitle": "Drive the car of your dreams.",
+    "description": "Tailored coaching, total immersion and elite e-racing. Precision driving on closed circuits.",
+    "ctaPrimary": "Book your session",
+    "ctaSecondary": "View pricing",
+    "statCentres": "Centres",
+    "statSimulators": "Simulators",
+    "statPilots": "Drivers"
+  },
+  "Features": {
+    "title": "Drive the car of",
+    "titleAccent": "your dreams",
+    "tagCoaching": "Coaching",
+    "tagImmersion": "Immersion",
+    "tagCustom": "Tailor-made",
+    "biggestChoice": {
+      "title": "The widest selection",
+      "description": "An exceptional variety of vehicles and iconic circuits. From the Nurburgring to the Cote d'Azur, experience ultra-realistic driving."
+    },
+    "advancedTech": {
+      "title": "Advanced technology",
+      "description": "Simucube force feedback wheels, high-end pedals and ultra-immersive screens. The ultimate in professional simulation."
+    },
+    "drivingCourses": {
+      "title": "Driving courses",
+      "description": "For beginners and experienced drivers alike. Learn and refine your skills on track in a realistic virtual environment."
+    },
+    "uniqueVenue": {
+      "title": "A unique venue",
+      "description": "Much more than a simulator centre. Relax in our friendly lounge and never miss a live sporting event."
+    }
+  },
+  "Simulateurs": {
+    "title": "Our",
+    "titleAccent": "simulators",
+    "description": "From Direct Drive wheels to triple screens, discover professional equipment designed for the most realistic sensations.",
+    "tripleScreen": {
+      "title": "Triple Screen Cockpit",
+      "description": "Total immersion with our setups featuring three curved screens, Simucube Direct Drive wheel and hydraulic pedals.",
+      "alt": "Triple screen simulator cockpit with Simucube wheel"
+    },
+    "pedalPro": {
+      "title": "Pro Pedals",
+      "description": "Progressive braking and ultra-realistic feel thanks to our professional pedals with load cell technology.",
+      "alt": "High-end professional pedals"
+    },
+    "racingChassis": {
+      "title": "Racing Chassis",
+      "description": "Rigid aluminium chassis that faithfully reproduce the driving position of a real racing car.",
+      "alt": "Pedals and racing cockpit close-up"
+    },
+    "directDrive": {
+      "title": "Direct Drive Wheel",
+      "description": "Simucube force feedback wheels to feel every kerb, every understeer with surgical precision.",
+      "alt": "Direct Drive Simucube wheel close-up"
+    },
+    "cta": "Book your session"
+  },
+  "HomeCtaBanner": {
+    "title": "Ready to take the",
+    "titleAccent": "wheel",
+    "titleEnd": "?",
+    "description": "Book your session now and dive into the world of professional sim racing.",
+    "cta": "Book your session"
+  },
+  "CentresSection": {
+    "title": "Our racing",
+    "titleAccent": "centres",
+    "description": "Discover our high-end simulation centres equipped with the latest technologies.",
+    "braine": {
+      "name": "TSP - Braine-l'Alleud",
+      "description": "From the EVO to the GT PRO simulator, our Braine-l'Alleud centre welcomes you in a premium setting for a simulation experience like never before.",
+      "badge": "Flagship",
+      "alt": "The Sim Power Centre Braine-l'Alleud"
+    },
+    "mons": {
+      "name": "TSP - Mons",
+      "description": "A friendly and family atmosphere, ideal for sharing thrills with friends or family. Bar area and guaranteed conviviality.",
+      "badge": "Friendly",
+      "alt": "The Sim Power Centre Mons"
+    },
+    "terminal1": {
+      "name": "TSP - Terminal 1",
+      "description": "Technology, emotion and conviviality. Push your limits behind the wheel of our latest generation simulators in a unique setting.",
+      "badge": "New",
+      "alt": "The Sim Power Centre Terminal 1"
+    },
+    "discover": "Discover",
+    "cta": "View all centres"
+  },
+  "Footer": {
+    "brandDescription": "The excellence of racing simulation. Tailored coaching, total immersion and elite e-racing.",
+    "navigation": "Navigation",
+    "contact": "Contact",
+    "copyright": "The Sim Power. All rights reserved.",
+    "legalNotice": "Legal notice",
+    "privacyPolicy": "Privacy policy",
+    "faq": "FAQ"
+  },
+  "ServicesPage": {
+    "metaTitle": "Our Services",
+    "metaDescription": "Discover our racing simulation offers: driving sessions, personalised courses and custom events.",
+    "heroTitle": "Our",
+    "heroTitleAccent": "services",
+    "heroDescription": "Discover our high-end racing simulation offers",
+    "drivingSessions": {
+      "title": "Driving sessions",
+      "description": "Treat yourself to a unique driving experience with our high-end racing simulators. Choose your car, your circuit and experience exceptional sensations.",
+      "cta": "Book a session"
+    },
+    "drivingCourses": {
+      "title": "Driving courses",
+      "description": "Perfect your driving skills with our personalised driving courses. Guided by professional drivers, with a programme tailored to your level.",
+      "cta": "Book a course"
+    },
+    "customEvents": {
+      "title": "Custom events",
+      "description": "Organise unique events such as team buildings, birthdays or competitions with friends. We create a tailor-made experience for your groups.",
+      "cta": "Contact us"
+    },
+    "whyUsTitle": "Why choose",
+    "whyUsTitleAccent": "The Sim Power",
+    "whyUsTitleEnd": "?",
+    "cuttingEdgeTech": {
+      "title": "Cutting-edge technology",
+      "description": "Simulators equipped with the best Simucube Direct Drive wheels and high-end pedals."
+    },
+    "proCoaching": {
+      "title": "Professional coaching",
+      "description": "A passionate team with real drivers to guide you and help you improve."
+    },
+    "flexibility": {
+      "title": "Flexibility & Booking",
+      "description": "Book easily via your online profile and manage your sessions independently."
+    }
+  },
+  "CentresPage": {
+    "metaTitle": "Our Centres",
+    "metaDescription": "Discover our simulation centres in Braine-l'Alleud, Mons and Terminal 1. High-end simulators and unique atmosphere.",
+    "heroTitle": "Our",
+    "heroTitleAccent": "centres",
+    "heroDescription": "Three exceptional venues for the ultimate racing simulation experience",
+    "braine": {
+      "name": "TSP - Braine-l'Alleud",
+      "address": "Avenue de l'Artisanat 2A, 1420 Braine-l'Alleud",
+      "description": "From the EVO to the GT PRO simulator, our Braine-l'Alleud centre welcomes you in a premium setting for a simulation experience like never before. Latest generation equipment and premium atmosphere.",
+      "badge": "Flagship",
+      "alt": "The Sim Power Centre Braine-l'Alleud",
+      "highlight1": "EVO & GT PRO Simulators",
+      "highlight2": "Premium setting",
+      "highlight3": "Easy parking"
+    },
+    "mons": {
+      "name": "TSP - Mons",
+      "address": "Mons, Belgium",
+      "description": "From EVO to GT PRO, our Mons centre welcomes you in a friendly and family atmosphere, ideal for sharing thrills with friends or family. Bar area and live sports broadcasts.",
+      "badge": "Friendly",
+      "alt": "The Sim Power Centre Mons",
+      "highlight1": "Family atmosphere",
+      "highlight2": "Bar area",
+      "highlight3": "Live sports events"
+    },
+    "terminal1": {
+      "name": "TSP - Terminal 1",
+      "address": "Terminal 1, Belgium",
+      "description": "Technology, emotion and conviviality. Come and experience unprecedented sensations, share challenges with friends or family, and push your limits behind the wheel of our latest generation simulators.",
+      "badge": "New",
+      "alt": "The Sim Power Centre Terminal 1",
+      "highlight1": "Latest generation",
+      "highlight2": "Immersive experience",
+      "highlight3": "Challenges & competitions"
+    }
+  },
+  "AboutPage": {
+    "metaTitle": "About Us",
+    "metaDescription": "Discover the story of The Sim Power, founded by Stephane Lewahert. Passion, excellence and innovation at the service of sim racing.",
+    "heroTitle": "About",
+    "heroTitleAccent": "us",
+    "heroDescription": "The story, vision and team behind The Sim Power",
+    "teamTitle": "Our",
+    "teamTitleAccent": "team",
+    "teamDescription": "Racing enthusiasts at the service of your experience",
+    "member1": {
+      "name": "Stephane Lewahert",
+      "role": "Founder & CEO",
+      "description": "Passionate about motorsport, Stephane founded The Sim Power to make high-end simulation accessible to all. His vision: combining cutting-edge technology with conviviality."
+    },
+    "member2": {
+      "name": "Nathan Lewahert",
+      "role": "Driving Coach",
+      "description": "An experienced driver, he guides our visitors in their progress and introduces them to the subtleties of circuit driving."
+    },
+    "member3": {
+      "name": "Coming soon",
+      "role": "Technical Manager",
+      "description": "Guarantor of the quality of our equipment, he ensures the proper functioning of our simulators and the integration of the latest technologies."
+    },
+    "member4": {
+      "name": "Coming soon",
+      "role": "Events Manager",
+      "description": "Organisation specialist, he designs tailor-made events: team buildings, birthdays, competitions and themed evenings."
+    },
+    "valuesTitle": "Our",
+    "valuesTitleAccent": "values",
+    "passion": {
+      "title": "Passion",
+      "description": "Sim racing is much more than a hobby. It is a passion we share with each of our visitors."
+    },
+    "excellence": {
+      "title": "Excellence",
+      "description": "From equipment to customer service, we strive for excellence at every stage of the experience."
+    },
+    "innovation": {
+      "title": "Innovation",
+      "description": "We constantly invest in the latest technologies to offer unparalleled immersion."
+    },
+    "conviviality": {
+      "title": "Conviviality",
+      "description": "Our centres are meeting places where everyone feels at home."
+    },
+    "timelineTitle": "Our",
+    "timelineTitleAccent": "journey",
+    "milestone1": {
+      "year": "2022",
+      "title": "Birth of the project",
+      "description": "Stephane Lewahert imagines a unique place where automotive passion and cutting-edge technology meet."
+    },
+    "milestone2": {
+      "year": "2023",
+      "title": "Opening of Braine-l'Alleud",
+      "description": "The first The Sim Power centre opens its doors with high-end simulators and premium service."
+    },
+    "milestone3": {
+      "year": "2024",
+      "title": "Expansion to Mons",
+      "description": "Building on success, a second centre opens in Mons with a bar area and family-friendly atmosphere."
+    },
+    "milestone4": {
+      "year": "2025",
+      "title": "Terminal 1",
+      "description": "The third centre, Terminal 1, pushes the experience even further with latest generation simulators."
+    },
+    "ctaTitle": "Join the",
+    "ctaTitleAccent": "adventure",
+    "ctaDescription": "Come discover our centres and share our passion for racing simulation.",
+    "ctaButton": "Contact us"
+  },
+  "PricingPage": {
+    "metaTitle": "Pricing & SimCoins",
+    "metaDescription": "Discover our prices and the SimCoin system, your digital currency to book your simulation sessions.",
+    "heroTitle": "Our",
+    "heroTitleAccent": "pricing",
+    "heroDescription": "Simple, transparent and flexible with the SimCoin system",
+    "simcoinTitle": "SimCoin – Your digital currency",
+    "simcoinDescription": "The SimCoin is the official virtual currency of all our The Sim Power centres.",
+    "simcoinEquation": "1 SimCoin = 1 €, simple as that.",
+    "simcoinFeature1": "Book your simulation sessions",
+    "simcoinFeature2": "Pay for your participation in events & competitions",
+    "simcoinFeature3": "Buy drinks & snacks in our centres",
+    "simcoinFeature4": "Gift sessions to your loved ones",
+    "simcoinNote": "Top up your SimCoins at any time from your personal dashboard.",
+    "sessionsTitle": "Session",
+    "sessionsTitleAccent": "pricing",
+    "sessionsDescription": "Choose the duration that suits you",
+    "tier1": {
+      "duration": "10 min",
+      "description": "Ideal for a first discovery"
+    },
+    "tier2": {
+      "duration": "20 min",
+      "description": "The perfect balance to fully enjoy"
+    },
+    "tier3": {
+      "duration": "30 min",
+      "description": "For enthusiasts who want to give it their all"
+    },
+    "popular": "Popular",
+    "cta": "Book now",
+    "disclaimer": "Prices may vary depending on centres or special events. SC = SimCoins."
+  },
+  "ContactPage": {
+    "metaTitle": "Contact",
+    "metaDescription": "Contact The Sim Power for any question or booking. We are here to help.",
+    "heroTitle": "Contact",
+    "heroDescription": "We are here to help",
+    "coordinatesTitle": "Our details",
+    "addressLabel": "Address",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "formTitle": "Send us a message",
+    "firstName": "First name",
+    "firstNamePlaceholder": "Your first name",
+    "lastName": "Last name",
+    "lastNamePlaceholder": "Your last name",
+    "email": "Email",
+    "emailPlaceholder": "your@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Your message...",
+    "send": "Send"
+  }
+}

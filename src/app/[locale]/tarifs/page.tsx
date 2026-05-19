@@ -1,41 +1,47 @@
-import type { Metadata } from "next";
-import Link from "next/link";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
-export const metadata: Metadata = {
-  title: "Tarifs & SimCoins",
-  description:
-    "Decouvrez nos tarifs et le systeme SimCoin, votre monnaie digitale pour reserver vos sessions de simulation.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "PricingPage" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
 const PRICING_TIERS = [
-  {
-    duration: "10 min",
-    price: 13,
-    description: "Ideal pour une premiere decouverte",
-    popular: false,
-  },
-  {
-    duration: "20 min",
-    price: 22,
-    description: "L'equilibre parfait pour profiter pleinement",
-    popular: true,
-  },
-  {
-    duration: "30 min",
-    price: 29,
-    description: "Pour les passionnes qui veulent tout donner",
-    popular: false,
-  },
+  { key: "tier1" as const, price: 13, popular: false },
+  { key: "tier2" as const, price: 22, popular: true },
+  { key: "tier3" as const, price: 29, popular: false },
 ] as const;
 
-const SIMCOIN_FEATURES = [
-  "Reserver vos sessions de simulation",
-  "Payer votre participation aux evenements & competitions",
-  "Acheter boissons & snacks dans nos centres",
-  "Offrir des sessions a vos proches",
+const SIMCOIN_FEATURE_KEYS = [
+  "simcoinFeature1",
+  "simcoinFeature2",
+  "simcoinFeature3",
+  "simcoinFeature4",
 ] as const;
 
-export default function TarifsPage() {
+export default async function TarifsPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  return <PricingContent />;
+}
+
+function PricingContent() {
+  const t = useTranslations("PricingPage");
+
   return (
     <>
       {/* Hero */}
@@ -43,10 +49,11 @@ export default function TarifsPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight">
-            Nos <span className="text-accent">tarifs</span>
+            {t("heroTitle")}{" "}
+            <span className="text-accent">{t("heroTitleAccent")}</span>
           </h1>
           <p className="mt-4 text-lg text-muted max-w-xl mx-auto">
-            Simple, transparent et flexible avec le systeme SimCoin
+            {t("heroDescription")}
           </p>
         </div>
       </section>
@@ -68,20 +75,19 @@ export default function TarifsPage() {
             {/* SimCoin info */}
             <div className="w-full lg:w-2/3">
               <h2 className="text-2xl sm:text-3xl font-black text-accent uppercase tracking-tight mb-4">
-                Le SimCoin &ndash; Votre monnaie digitale
+                {t("simcoinTitle")}
               </h2>
               <p className="text-muted leading-relaxed mb-2">
-                Le SimCoin est la monnaie virtuelle officielle de tous nos
-                centres The Sim Power.
+                {t("simcoinDescription")}
               </p>
               <p className="text-xl font-bold text-white mb-6">
-                1 SimCoin = 1 &euro;, tout simplement.
+                {t("simcoinEquation")}
               </p>
 
               <ul className="space-y-3 mb-6">
-                {SIMCOIN_FEATURES.map((feature) => (
+                {SIMCOIN_FEATURE_KEYS.map((key) => (
                   <li
-                    key={feature}
+                    key={key}
                     className="flex items-center gap-3 text-sm text-muted"
                   >
                     <svg
@@ -97,14 +103,13 @@ export default function TarifsPage() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    {feature}
+                    {t(key)}
                   </li>
                 ))}
               </ul>
 
               <p className="text-sm text-muted">
-                Rechargez vos SimCoins a tout moment depuis votre espace
-                personnel.
+                {t("simcoinNote")}
               </p>
             </div>
           </div>
@@ -115,16 +120,17 @@ export default function TarifsPage() {
       <section className="pb-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-black uppercase tracking-tight text-center mb-4">
-            Tarifs des <span className="text-accent">sessions</span>
+            {t("sessionsTitle")}{" "}
+            <span className="text-accent">{t("sessionsTitleAccent")}</span>
           </h2>
           <p className="text-center text-muted mb-12">
-            Choisissez la duree qui vous convient
+            {t("sessionsDescription")}
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {PRICING_TIERS.map((tier) => (
               <div
-                key={tier.duration}
+                key={tier.key}
                 className={`relative rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105 ${
                   tier.popular
                     ? "bg-accent text-white shadow-2xl shadow-accent/30 scale-105"
@@ -133,7 +139,7 @@ export default function TarifsPage() {
               >
                 {tier.popular && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-white text-accent text-xs font-bold uppercase tracking-wider rounded-full">
-                    Populaire
+                    {t("popular")}
                   </span>
                 )}
 
@@ -142,7 +148,7 @@ export default function TarifsPage() {
                     tier.popular ? "text-white/80" : "text-muted"
                   }`}
                 >
-                  {tier.duration}
+                  {t(`${tier.key}.duration`)}
                 </p>
 
                 <p className="text-5xl font-black mb-1">
@@ -155,7 +161,7 @@ export default function TarifsPage() {
                     tier.popular ? "text-white/70" : "text-muted"
                   }`}
                 >
-                  {tier.description}
+                  {t(`${tier.key}.description`)}
                 </p>
 
                 <Link
@@ -166,15 +172,14 @@ export default function TarifsPage() {
                       : "bg-accent hover:bg-accent-light text-white"
                   }`}
                 >
-                  Reserver
+                  {t("cta")}
                 </Link>
               </div>
             ))}
           </div>
 
           <p className="text-center text-xs text-muted mt-8">
-            Les tarifs sont susceptibles d&apos;evoluer selon les centres ou
-            evenements speciaux. SC = SimCoins.
+            {t("disclaimer")}
           </p>
         </div>
       </section>

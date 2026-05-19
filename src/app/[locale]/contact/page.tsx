@@ -1,12 +1,33 @@
-import type { Metadata } from "next";
+import { setRequestLocale, getTranslations } from "next-intl/server";
+import { useTranslations } from "next-intl";
 
-export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Contactez The Sim Power pour toute question ou reservation. Nous sommes la pour vous aider.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "ContactPage" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
-export default function ContactPage() {
+export default async function ContactPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
+  return <ContactContent />;
+}
+
+function ContactContent() {
+  const t = useTranslations("ContactPage");
+
   return (
     <>
       {/* Hero */}
@@ -14,10 +35,10 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight">
-            <span className="text-accent">Contact</span>
+            <span className="text-accent">{t("heroTitle")}</span>
           </h1>
           <p className="mt-4 text-lg text-muted max-w-xl mx-auto">
-            Nous sommes la pour vous aider
+            {t("heroDescription")}
           </p>
         </div>
       </section>
@@ -29,7 +50,7 @@ export default function ContactPage() {
             {/* Contact info */}
             <div className="bg-surface rounded-2xl border border-white/5 p-8">
               <h2 className="text-2xl font-bold text-accent uppercase tracking-wide mb-8">
-                Nos coordonnees
+                {t("coordinatesTitle")}
               </h2>
 
               <div className="space-y-6">
@@ -42,7 +63,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white mb-1">
-                      Adresse
+                      {t("addressLabel")}
                     </p>
                     <p className="text-sm text-muted">
                       Avenue de l&apos;Artisanat 2A,
@@ -60,7 +81,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white mb-1">
-                      Telephone
+                      {t("phoneLabel")}
                     </p>
                     <a
                       href="tel:+32494365913"
@@ -79,7 +100,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm font-semibold text-white mb-1">
-                      Email
+                      {t("emailLabel")}
                     </p>
                     <a
                       href="mailto:info@thesimpower.com"
@@ -109,7 +130,7 @@ export default function ContactPage() {
             {/* Contact form */}
             <div>
               <h2 className="text-2xl font-bold text-accent uppercase tracking-wide mb-8">
-                Envoyez-nous un message
+                {t("formTitle")}
               </h2>
 
               <form className="space-y-6">
@@ -119,14 +140,14 @@ export default function ContactPage() {
                       htmlFor="firstName"
                       className="block text-sm font-medium text-white/80 mb-2"
                     >
-                      Prenom
+                      {t("firstName")}
                     </label>
                     <input
                       type="text"
                       id="firstName"
                       name="firstName"
                       className="w-full px-4 py-3 bg-surface border border-white/10 rounded-xl text-white placeholder-muted text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-                      placeholder="Votre prenom"
+                      placeholder={t("firstNamePlaceholder")}
                     />
                   </div>
                   <div>
@@ -134,14 +155,14 @@ export default function ContactPage() {
                       htmlFor="lastName"
                       className="block text-sm font-medium text-white/80 mb-2"
                     >
-                      Nom
+                      {t("lastName")}
                     </label>
                     <input
                       type="text"
                       id="lastName"
                       name="lastName"
                       className="w-full px-4 py-3 bg-surface border border-white/10 rounded-xl text-white placeholder-muted text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-                      placeholder="Votre nom"
+                      placeholder={t("lastNamePlaceholder")}
                     />
                   </div>
                 </div>
@@ -151,14 +172,14 @@ export default function ContactPage() {
                     htmlFor="email"
                     className="block text-sm font-medium text-white/80 mb-2"
                   >
-                    Email
+                    {t("email")}
                   </label>
                   <input
                     type="email"
                     id="email"
                     name="email"
                     className="w-full px-4 py-3 bg-surface border border-white/10 rounded-xl text-white placeholder-muted text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors"
-                    placeholder="votre@email.com"
+                    placeholder={t("emailPlaceholder")}
                   />
                 </div>
 
@@ -167,14 +188,14 @@ export default function ContactPage() {
                     htmlFor="message"
                     className="block text-sm font-medium text-white/80 mb-2"
                   >
-                    Message
+                    {t("message")}
                   </label>
                   <textarea
                     id="message"
                     name="message"
                     rows={5}
                     className="w-full px-4 py-3 bg-surface border border-white/10 rounded-xl text-white placeholder-muted text-sm focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-colors resize-none"
-                    placeholder="Votre message..."
+                    placeholder={t("messagePlaceholder")}
                   />
                 </div>
 
@@ -182,7 +203,7 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full px-8 py-4 bg-accent hover:bg-accent-light text-white font-bold text-sm uppercase tracking-wider rounded-full transition-all duration-300 hover:shadow-xl hover:shadow-accent/30"
                 >
-                  Envoyer
+                  {t("send")}
                 </button>
               </form>
             </div>

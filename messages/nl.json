@@ -1,0 +1,319 @@
+{
+  "Metadata": {
+    "defaultTitle": "The Sim Power | De excellentie van racesimulatie",
+    "titleTemplate": "%s | The Sim Power",
+    "defaultDescription": "Coaching op maat, totale onderdompeling en elite e-racing. Rijd de auto van uw dromen op onze high-end simulatoren."
+  },
+  "Header": {
+    "home": "Home",
+    "services": "Diensten",
+    "centres": "Centra",
+    "about": "Over ons",
+    "pricing": "Tarieven",
+    "contact": "Contact",
+    "cta": "Boeken"
+  },
+  "Hero": {
+    "badge": "High-end racesimulatie",
+    "titleLine1": "De excellentie van",
+    "titleLine2": "simulatie.",
+    "subtitle": "Rijd de auto van uw dromen.",
+    "description": "Coaching op maat, totale onderdompeling en elite e-racing. Precisierijden op gesloten circuits.",
+    "ctaPrimary": "Boek uw sessie",
+    "ctaSecondary": "Bekijk tarieven",
+    "statCentres": "Centra",
+    "statSimulators": "Simulatoren",
+    "statPilots": "Rijders"
+  },
+  "Features": {
+    "title": "Rijd de auto van",
+    "titleAccent": "uw dromen",
+    "tagCoaching": "Coaching",
+    "tagImmersion": "Onderdompeling",
+    "tagCustom": "Op maat",
+    "biggestChoice": {
+      "title": "De grootste keuze",
+      "description": "Een uitzonderlijke verscheidenheid aan voertuigen en iconische circuits. Van de Nurburgring tot de Cote d'Azur, beleef een ultra-realistische ervaring."
+    },
+    "advancedTech": {
+      "title": "Geavanceerde technologie",
+      "description": "Simucube force feedback sturen, high-end pedalen en ultra-meeslepende schermen. Het neusje van de zalm in professionele simulatie."
+    },
+    "drivingCourses": {
+      "title": "Rijcursussen",
+      "description": "Voor beginners en ervaren rijders. Leer en verfijn uw vaardigheden op het circuit in een realistische virtuele omgeving."
+    },
+    "uniqueVenue": {
+      "title": "Een unieke locatie",
+      "description": "Veel meer dan een simulatorcentrum. Ontspan in onze gezellige lounge en mis geen enkel live sportevenement."
+    }
+  },
+  "Simulateurs": {
+    "title": "Onze",
+    "titleAccent": "simulatoren",
+    "description": "Van Direct Drive sturen tot drievoudige schermen, ontdek professionele apparatuur ontworpen voor de meest realistische sensaties.",
+    "tripleScreen": {
+      "title": "Triple Screen Cockpit",
+      "description": "Totale onderdompeling met onze opstellingen met drie gebogen schermen, Simucube Direct Drive stuur en hydraulische pedalen.",
+      "alt": "Triple screen simulator cockpit met Simucube stuur"
+    },
+    "pedalPro": {
+      "title": "Pro Pedalen",
+      "description": "Progressief remmen en ultra-realistisch gevoel dankzij onze professionele pedalen met loadcel-technologie.",
+      "alt": "High-end professionele pedalen"
+    },
+    "racingChassis": {
+      "title": "Racing Chassis",
+      "description": "Stijve aluminium chassis die getrouw de rijpositie van een echte racewagen reproduceren.",
+      "alt": "Pedalen en racing cockpit close-up"
+    },
+    "directDrive": {
+      "title": "Direct Drive Stuur",
+      "description": "Simucube force feedback sturen om elke kerb, elke onderstuur met chirurgische precisie te voelen.",
+      "alt": "Direct Drive Simucube stuur close-up"
+    },
+    "cta": "Boek uw sessie"
+  },
+  "HomeCtaBanner": {
+    "title": "Klaar om het",
+    "titleAccent": "stuur",
+    "titleEnd": "te nemen?",
+    "description": "Boek nu uw sessie en duik in de wereld van professionele sim racing.",
+    "cta": "Boek uw sessie"
+  },
+  "CentresSection": {
+    "title": "Onze race",
+    "titleAccent": "centra",
+    "description": "Ontdek onze high-end simulatiecentra uitgerust met de nieuwste technologieen.",
+    "braine": {
+      "name": "TSP - Braine-l'Alleud",
+      "description": "Van de EVO tot de GT PRO simulator, ons centrum in Braine-l'Alleud verwelkomt u in een premium omgeving voor een simulatie-ervaring als nooit tevoren.",
+      "badge": "Flagship",
+      "alt": "The Sim Power Centrum Braine-l'Alleud"
+    },
+    "mons": {
+      "name": "TSP - Mons",
+      "description": "Een gezellige en familiale sfeer, ideaal om sensaties te delen met vrienden of familie. Bar en gezelligheid gegarandeerd.",
+      "badge": "Gezellig",
+      "alt": "The Sim Power Centrum Mons"
+    },
+    "terminal1": {
+      "name": "TSP - Terminal 1",
+      "description": "Technologie, emotie en gezelligheid. Verleg uw grenzen achter het stuur van onze nieuwste generatie simulatoren in een unieke omgeving.",
+      "badge": "Nieuw",
+      "alt": "The Sim Power Centrum Terminal 1"
+    },
+    "discover": "Ontdekken",
+    "cta": "Bekijk alle centra"
+  },
+  "Footer": {
+    "brandDescription": "De excellentie van racesimulatie. Coaching op maat, totale onderdompeling en elite e-racing.",
+    "navigation": "Navigatie",
+    "contact": "Contact",
+    "copyright": "The Sim Power. Alle rechten voorbehouden.",
+    "legalNotice": "Juridische vermeldingen",
+    "privacyPolicy": "Privacybeleid",
+    "faq": "FAQ"
+  },
+  "ServicesPage": {
+    "metaTitle": "Onze Diensten",
+    "metaDescription": "Ontdek ons aanbod voor racesimulatie: rijsessies, persoonlijke cursussen en evenementen op maat.",
+    "heroTitle": "Onze",
+    "heroTitleAccent": "diensten",
+    "heroDescription": "Ontdek ons high-end aanbod voor racesimulatie",
+    "drivingSessions": {
+      "title": "Rijsessies",
+      "description": "Trakteer uzelf op een unieke rijervaring met onze high-end racesimulatoren. Kies uw auto, uw circuit en beleef uitzonderlijke sensaties.",
+      "cta": "Boek een sessie"
+    },
+    "drivingCourses": {
+      "title": "Rijcursussen",
+      "description": "Perfectioneer uw rijvaardigheden met onze gepersonaliseerde rijcursussen. Begeleiding door professionele rijders, programma aangepast aan uw niveau.",
+      "cta": "Boek een cursus"
+    },
+    "customEvents": {
+      "title": "Evenementen op maat",
+      "description": "Organiseer unieke evenementen zoals teambuildings, verjaardagen of competities met vrienden. Wij creeren een ervaring op maat voor uw groepen.",
+      "cta": "Neem contact op"
+    },
+    "whyUsTitle": "Waarom kiezen voor",
+    "whyUsTitleAccent": "The Sim Power",
+    "whyUsTitleEnd": "?",
+    "cuttingEdgeTech": {
+      "title": "Geavanceerde technologie",
+      "description": "Simulatoren uitgerust met de beste Simucube Direct Drive sturen en high-end pedalen."
+    },
+    "proCoaching": {
+      "title": "Professionele begeleiding",
+      "description": "Een gepassioneerd team met echte rijders om u te begeleiden en te helpen verbeteren."
+    },
+    "flexibility": {
+      "title": "Flexibiliteit & Reservering",
+      "description": "Boek eenvoudig via uw online profiel en beheer uw sessies zelfstandig."
+    }
+  },
+  "CentresPage": {
+    "metaTitle": "Onze Centra",
+    "metaDescription": "Ontdek onze simulatiecentra in Braine-l'Alleud, Mons en Terminal 1. High-end simulatoren en unieke sfeer.",
+    "heroTitle": "Onze",
+    "heroTitleAccent": "centra",
+    "heroDescription": "Drie uitzonderlijke locaties voor de ultieme racesimulatie-ervaring",
+    "braine": {
+      "name": "TSP - Braine-l'Alleud",
+      "address": "Avenue de l'Artisanat 2A, 1420 Braine-l'Alleud",
+      "description": "Van de EVO tot de GT PRO simulator, ons centrum in Braine-l'Alleud verwelkomt u in een premium omgeving voor een simulatie-ervaring als nooit tevoren. Nieuwste generatie apparatuur en premium sfeer.",
+      "badge": "Flagship",
+      "alt": "The Sim Power Centrum Braine-l'Alleud",
+      "highlight1": "EVO & GT PRO Simulatoren",
+      "highlight2": "Premium omgeving",
+      "highlight3": "Makkelijk parkeren"
+    },
+    "mons": {
+      "name": "TSP - Mons",
+      "address": "Mons, Belgie",
+      "description": "Van EVO tot GT PRO, ons centrum in Mons verwelkomt u in een gezellige en familiale sfeer, ideaal om sensaties te delen met vrienden of familie. Bar en live sportuitzendingen.",
+      "badge": "Gezellig",
+      "alt": "The Sim Power Centrum Mons",
+      "highlight1": "Familiale sfeer",
+      "highlight2": "Bar",
+      "highlight3": "Live sportevenementen"
+    },
+    "terminal1": {
+      "name": "TSP - Terminal 1",
+      "address": "Terminal 1, Belgie",
+      "description": "Technologie, emotie en gezelligheid. Kom en beleef ongekende sensaties, deel uitdagingen met vrienden of familie en verleg uw grenzen achter het stuur van onze nieuwste generatie simulatoren.",
+      "badge": "Nieuw",
+      "alt": "The Sim Power Centrum Terminal 1",
+      "highlight1": "Nieuwste generatie",
+      "highlight2": "Meeslepende ervaring",
+      "highlight3": "Uitdagingen & competities"
+    }
+  },
+  "AboutPage": {
+    "metaTitle": "Over Ons",
+    "metaDescription": "Ontdek het verhaal van The Sim Power, opgericht door Stephane Lewahert. Passie, excellentie en innovatie ten dienste van sim racing.",
+    "heroTitle": "Over",
+    "heroTitleAccent": "ons",
+    "heroDescription": "Het verhaal, de visie en het team achter The Sim Power",
+    "teamTitle": "Ons",
+    "teamTitleAccent": "team",
+    "teamDescription": "Racefanaten ten dienste van uw ervaring",
+    "member1": {
+      "name": "Stephane Lewahert",
+      "role": "Oprichter & CEO",
+      "description": "Gepassioneerd door autosport, richtte Stephane The Sim Power op om high-end simulatie toegankelijk te maken voor iedereen. Zijn visie: geavanceerde technologie combineren met gezelligheid."
+    },
+    "member2": {
+      "name": "Nathan Lewahert",
+      "role": "Rijcoach",
+      "description": "Een ervaren rijder, hij begeleidt onze bezoekers in hun vooruitgang en laat hen de subtiliteiten van circuitrijden ontdekken."
+    },
+    "member3": {
+      "name": "Binnenkort",
+      "role": "Technisch Verantwoordelijke",
+      "description": "Garant voor de kwaliteit van onze apparatuur, hij zorgt voor de goede werking van onze simulatoren en de integratie van de nieuwste technologieen."
+    },
+    "member4": {
+      "name": "Binnenkort",
+      "role": "Evenementen Verantwoordelijke",
+      "description": "Organisatiespecialist, hij ontwerpt evenementen op maat: teambuildings, verjaardagen, competities en thema-avonden."
+    },
+    "valuesTitle": "Onze",
+    "valuesTitleAccent": "waarden",
+    "passion": {
+      "title": "Passie",
+      "description": "Sim racing is veel meer dan een hobby. Het is een passie die we delen met elk van onze bezoekers."
+    },
+    "excellence": {
+      "title": "Excellentie",
+      "description": "Van apparatuur tot klantenservice, wij streven naar excellentie bij elke stap van de ervaring."
+    },
+    "innovation": {
+      "title": "Innovatie",
+      "description": "Wij investeren voortdurend in de nieuwste technologieen om een ongeevenaarde onderdompeling te bieden."
+    },
+    "conviviality": {
+      "title": "Gezelligheid",
+      "description": "Onze centra zijn ontmoetingsplaatsen waar iedereen zich thuis voelt."
+    },
+    "timelineTitle": "Ons",
+    "timelineTitleAccent": "parcours",
+    "milestone1": {
+      "year": "2022",
+      "title": "Geboorte van het project",
+      "description": "Stephane Lewahert stelt zich een unieke plek voor waar autopassie en geavanceerde technologie samenkomen."
+    },
+    "milestone2": {
+      "year": "2023",
+      "title": "Opening van Braine-l'Alleud",
+      "description": "Het eerste The Sim Power centrum opent zijn deuren met high-end simulatoren en premium ontvangst."
+    },
+    "milestone3": {
+      "year": "2024",
+      "title": "Uitbreiding naar Mons",
+      "description": "Voortbouwend op het succes opent een tweede centrum in Mons, met een bar en een familiale sfeer."
+    },
+    "milestone4": {
+      "year": "2025",
+      "title": "Terminal 1",
+      "description": "Het derde centrum, Terminal 1, tilt de ervaring nog hoger met simulatoren van de nieuwste generatie."
+    },
+    "ctaTitle": "Doe mee met het",
+    "ctaTitleAccent": "avontuur",
+    "ctaDescription": "Kom onze centra ontdekken en deel onze passie voor racesimulatie.",
+    "ctaButton": "Neem contact op"
+  },
+  "PricingPage": {
+    "metaTitle": "Tarieven & SimCoins",
+    "metaDescription": "Ontdek onze tarieven en het SimCoin-systeem, uw digitale munt om uw simulatiesessies te boeken.",
+    "heroTitle": "Onze",
+    "heroTitleAccent": "tarieven",
+    "heroDescription": "Eenvoudig, transparant en flexibel met het SimCoin-systeem",
+    "simcoinTitle": "SimCoin – Uw digitale munt",
+    "simcoinDescription": "De SimCoin is de officiele virtuele munt van al onze The Sim Power centra.",
+    "simcoinEquation": "1 SimCoin = 1 €, zo eenvoudig is het.",
+    "simcoinFeature1": "Boek uw simulatiesessies",
+    "simcoinFeature2": "Betaal uw deelname aan evenementen & competities",
+    "simcoinFeature3": "Koop dranken & snacks in onze centra",
+    "simcoinFeature4": "Geef sessies cadeau aan uw naasten",
+    "simcoinNote": "Laad uw SimCoins op elk moment op vanuit uw persoonlijk dashboard.",
+    "sessionsTitle": "Sessie",
+    "sessionsTitleAccent": "tarieven",
+    "sessionsDescription": "Kies de duur die bij u past",
+    "tier1": {
+      "duration": "10 min",
+      "description": "Ideaal voor een eerste kennismaking"
+    },
+    "tier2": {
+      "duration": "20 min",
+      "description": "De perfecte balans om ten volle te genieten"
+    },
+    "tier3": {
+      "duration": "30 min",
+      "description": "Voor enthousiastelingen die alles willen geven"
+    },
+    "popular": "Populair",
+    "cta": "Boeken",
+    "disclaimer": "Tarieven kunnen varieren per centrum of bij speciale evenementen. SC = SimCoins."
+  },
+  "ContactPage": {
+    "metaTitle": "Contact",
+    "metaDescription": "Neem contact op met The Sim Power voor vragen of reserveringen. Wij staan voor u klaar.",
+    "heroTitle": "Contact",
+    "heroDescription": "Wij staan voor u klaar",
+    "coordinatesTitle": "Onze gegevens",
+    "addressLabel": "Adres",
+    "phoneLabel": "Telefoon",
+    "emailLabel": "E-mail",
+    "formTitle": "Stuur ons een bericht",
+    "firstName": "Voornaam",
+    "firstNamePlaceholder": "Uw voornaam",
+    "lastName": "Achternaam",
+    "lastNamePlaceholder": "Uw achternaam",
+    "email": "E-mail",
+    "emailPlaceholder": "uw@email.com",
+    "message": "Bericht",
+    "messagePlaceholder": "Uw bericht...",
+    "send": "Verzenden"
+  }
+}
